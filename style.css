@@ -69,8 +69,9 @@ mark {
 @media only screen and (max-width: 700px) {
   #title {
     font-size: 2rem;
-    padding-top: 15px;
+    padding-top: 18px;
     font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 
