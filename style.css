@@ -1,10 +1,12 @@
 body {
-  background-color: rgb(36, 34, 34);
+  background-color: rgb(20, 20, 20);
 }
 
 .card {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  box-shadow: rgba(203, 210, 208, 0.16) 0px 3px 6px,
+    rgba(221, 221, 216, 0.23) 0px 3px 6px;
 }
 
 .card-img-bottom {
@@ -44,19 +46,20 @@ mark {
   background-color: yellow;
 }
 
-.navbar{
-  background-color: #5ff3bdef;
+.navbar {
+  background-color: rgba(238, 231, 239, 0.961);
 }
 
-.nav-link{
-  color: black;
-  font-size: large;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.nav-link {
+  color: rgb(10, 10, 10);
+  font-size: 20px;
+  margin: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   font-size: larger;
-  color:darkorange;
+  color: darkorange;
 }
 
 #title {
@@ -71,7 +74,7 @@ mark {
     font-size: 2rem;
     padding-top: 18px;
     font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
 
