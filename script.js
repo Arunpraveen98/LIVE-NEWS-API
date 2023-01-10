@@ -4,31 +4,31 @@
 async function TopNews() {
   try {
 
-    var TopNews = await fetch(
+    let TopNews = await fetch(
       "https://api.thenewsapi.com/v1/news/top?api_token=bpzNZnWBYY3MQPtiOxcIPW3wBqU4PSXiA1zhtIk4&locale=in&limit=5"
     );
-    var JsonFormat = await TopNews.json();
+    let JsonFormat = await TopNews.json();
    // console.log(JsonFormat);
 
    //for loop to get the top 5 news dynamically :-
    //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    for (var i = 0; i < 5; i++) {
-      var title = JsonFormat.data[i].title;
+    for (let i = 0; i < 5; i++) {
+      let title = JsonFormat.data[i].title;
       
-      var description = JsonFormat.data[i].description;
+      let description = JsonFormat.data[i].description;
   
-      var snippet = JsonFormat.data[i].snippet;
+      let snippet = JsonFormat.data[i].snippet;
      
-      var reference_url = JsonFormat.data[i].url;
+      let reference_url = JsonFormat.data[i].url;
       
-      var image_url = JsonFormat.data[i].image_url;
+      let image_url = JsonFormat.data[i].image_url;
    
-      var published_on = JsonFormat.data[i].published_at;
+      let published_on = JsonFormat.data[i].published_at;
    
-      var source = JsonFormat.data[i].source;
+      let source = JsonFormat.data[i].source;
       
       //dynamically fetched api data is assigned:-
-      var row = document.getElementById("row-content");
+      let row = document.getElementById("row-content");
       //if conditions are used only for to navigate 
       //different news instead of scrolling the pages.
       if (i == 0) {
